@@ -1,0 +1,2 @@
+const createValue = () => 'value'
+createValue()

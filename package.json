@@ -1,0 +1,30 @@
+{
+  "name": "use-ripple",
+  "type": "module",
+  "scripts": {
+    "commit": "cz",
+    "format": "prettier-package-json --write && pretty-quick --verbose",
+    "postinstall": "husky install",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "prepare": "husky || true"
+  },
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+    "commitizen": "^4.3.0",
+    "commitlint": "12",
+    "commitlint-config-gitmoji": "^2.3.1",
+    "cross-env": "^7.0.3",
+    "cz-conventional-changelog": "^3.3.0",
+    "cz-gitmoji": "^0.0.7",
+    "eslint": "^8.57.0",
+    "eslint-config-love": "^47.0.0",
+    "eslint-config-prettier": "^9.1.0",
+    "husky": "^9.1.1",
+    "lint-staged": "^15.2.7",
+    "prettier": "^3.3.3",
+    "prettier-package-json": "^2.8.0",
+    "pretty-quick": "^4.0.0",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.0.0"
+  }
+}
