@@ -9,6 +9,9 @@
   "endOfLine": "auto",
   "arrowParens": "always",
   "trailingComma": "all",
+  "plugins": ["@trivago/prettier-plugin-sort-imports"],
   "importOrder": ["<THIRD_PARTY_MODULES>", "^~/(.*)$", "^@/(.*)$", "^(?!./).*/(.*ss)$", "^[./]"],
-  "plugins": ["@trivago/prettier-plugin-sort-imports"]
+  "importOrderSortSpecifiers": true,
+  "importOrderCaseInsensitive": true,
+  "importOrderGroupNamespaceSpecifiers": true
 }

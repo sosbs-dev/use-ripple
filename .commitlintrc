@@ -1,5 +1,5 @@
 {
   "extends": [
-    "gitmoji"
+    "@commitlint/config-conventional"
   ]
 }

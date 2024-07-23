@@ -1,2 +1,0 @@
-const createValue = () => 'value'
-createValue()
