@@ -21,6 +21,8 @@ function useRipple(domRef: RefObject<HTMLElement>, props?: UseRippleProps) {
   )
 
   const onClick = useCallback((event: MouseEvent) => {
+    event.stopImmediatePropagation()
+
     const trigger = event.currentTarget as HTMLElement
     const size = Math.max(trigger.clientWidth, trigger.clientHeight)
     const rect = trigger.getBoundingClientRect()
@@ -42,6 +44,7 @@ function useRipple(domRef: RefObject<HTMLElement>, props?: UseRippleProps) {
       trigger.style.position = 'relative'
       trigger.style.overflow = 'hidden'
       trigger.style.userSelect = 'none'
+      trigger.style.cursor = 'pointer'
 
       trigger?.addEventListener('mousedown', onClick)
 
