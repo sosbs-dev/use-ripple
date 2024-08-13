@@ -1,7 +1,7 @@
 import { AnimatePresence, domAnimation, LazyMotion, motion } from 'framer-motion'
 import type { HTMLMotionProps } from 'framer-motion'
 import type { FC } from 'react'
-import { clamp } from './utils'
+import { clamp } from '@/utils'
 
 export interface RippleType {
   key: React.Key

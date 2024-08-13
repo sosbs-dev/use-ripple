@@ -1,5 +1,5 @@
-import useDOMRef from './use-dom-ref'
-import useRipple from './use-ripple'
+import useDOMRef from '@/use-dom-ref'
+import useRipple from '@/use-ripple'
 
 function App() {
   const mainRef = useDOMRef()

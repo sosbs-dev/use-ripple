@@ -1,6 +1,6 @@
 import { type RefObject, useCallback, useEffect, useState } from 'react'
+import { getUniqueID } from '@/utils'
 import Ripple, { type RippleProps, type RippleType } from './ripple'
-import { getUniqueID } from './utils'
 
 export interface UseRippleProps extends Omit<RippleProps, 'ripples' | 'onClear'> {
   onClear?: (key: React.Key) => void
